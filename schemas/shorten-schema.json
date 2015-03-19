@@ -7,7 +7,7 @@
       "properties": {
         "new_hash": {
           "description": "Designates if this is the first time this long_url was shortened by this user. The return value will equal 1 the first time a long_url is shortened. It will also then be added to the user  history.",
-          "type": "string"
+          "type": "integer"
         },
         "url": {
           "description": "The actual link that should be used, and is a unique value for the given bitly account.",

@@ -1,45 +1,33 @@
 {
-  "data": {
-    "link_history": [
+  "status_code" : 200 ,
+  "data" : {
+    "link_history" : [
       {
-        "aggregate_link": "http://4sq.com/bGUucR",
-        "archived": false,
-        "client_id": "a5a2e024b030d6a594be866c7be57b5e2dff9972",
-        "created_at": 1331669360,
-        "link": "http://4sq.com/xnRb5V",
-        "long_url": "http://foursquare.com/",
-        "modified_at": 1331669360,
-        "private": false,
-        "title": null,
-        "user_ts": 1331669360
-      },
-      {
-        "aggregate_link": "http://nyti.ms/16tOHV",
-        "archived": false,
-        "client_id": "a5a2e024b030d6a594be866c7be57b5e2dff9972",
-        "created_at": 1331669349,
-        "link": "http://nyti.ms/xr5jgq",
-        "long_url": "http://nytimes.com/",
-        "modified_at": 1331669350,
-        "private": false,
-        "title": "The New York Times - Breaking News, World News & Multimedia",
-        "user_ts": 1331669349
-      },
-      {
-        "aggregate_link": "http://bit.ly/2V6CFi",
-        "archived": false,
-        "client_id": "a5a2e024b030d6a594be866c7be57b5e2dff9972",
-        "created_at": 1331663117,
-        "link": "http://bit.ly/zhheQ9",
-        "long_url": "http://www.google.com/",
-        "modified_at": 1331663117,
-        "private": false,
-        "title": "Google",
-        "user_ts": 1331663117
+        "archived" : false ,
+        "user_ts" : 1394806011 ,
+        "bundle_links" : [
+          "http://bitly.com/bundles/ksviridov/s" ,
+          "http://bitly.com/bundles/ksviridov/E" ,
+          "http://bitly.com/bundles/ksviridov/H" ,
+          "http://bitly.com/bundles/ksviridov/Q" ,
+          "http://bitly.com/bundles/ksviridov/U" ,
+          "http://bitly.com/bundles/ksviridov/11" ,
+          "http://bitly.com/bundles/ksviridov/14"
+        ] ,
+        "title" : "Anypoint API Portal - A Modern Web Suite for RESTful APIs" ,
+        "created_at" : 1394806011 ,
+        "tags" : [
+        ] ,
+        "modified_at" : 1426679359 ,
+        "private" : false ,
+        "note" : "new note value" ,
+        "aggregate_link" : "http://bit.ly/X68JMK" ,
+        "long_url" : "http://www.apihub.com/" ,
+        "client_id" : "36b72d37f23e9e247e0aa39983841c92163c5c2f" ,
+        "link" : "http://bit.ly/NdpB5S"
       }
-    ],
-    "result_count": 3
-  },
-  "status_code": 200,
-  "status_txt": "OK"
+    ] ,
+    "result_count" : 15
+  } ,
+  "status_txt" : "OK"
 }
