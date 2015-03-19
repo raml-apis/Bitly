@@ -1,10 +1,11 @@
 {
-  "data": {
-    "share_metrics": 17,
-    "tz_offset": -4,
-    "unit": "day",
-    "units": -1
-  },
-  "status_code": 200,
-  "status_txt": "OK"
+	"status_code": 200,
+	"data": {
+		"units": -1,
+		"unit_reference_ts": null,
+		"share_counts": 0,
+		"tz_offset": -4,
+		"unit": "day"
+	},
+	"status_txt": "OK"
 }

@@ -1,27 +1,48 @@
 {
-  "$schema": "http://json-schema.org/draft-03/schema",
-  "required": true,
-  "properties": {
-    "data": {
-      "type": "object",
-      "properties": {
-        "aggregate_link": {
-          "description": "The aggregate (global) bitly link for the provided bitly link.",
-          "type": "string"
-        },
-        "entries": {
-          "description": "A mapping of link, user, and ts (when the link was created).",
-          "type": "string"
+  "required" : true ,
+  "$schema" : "http://json-schema.org/draft-03/schema" ,
+  "type" : "object" ,
+  "properties" : {
+    "status_code" : {
+      "type" : "number" ,
+      "required" : false
+    } ,
+    "data" : {
+      "type" : "object" ,
+      "required" : false ,
+      "properties" : {
+        "aggregate_link" : {
+          "type" : "string" ,
+          "required" : false
+        } ,
+        "entries" : {
+          "type" : "array" ,
+          "required" : false ,
+          "items" : [
+            {
+              "type" : "object" ,
+              "properties" : {
+                "link" : {
+                  "type" : "string" ,
+                  "required" : false
+                } ,
+                "user" : {
+                  "type" : "string" ,
+                  "required" : false
+                } ,
+                "ts" : {
+                  "type" : "number" ,
+                  "required" : false
+                }
+              }
+            }
+          ]
         }
       }
-    },
-    "status_code": {
-      "type": "integer",
-      "required": true
-    },
-    "status_txt": {
-      "type": "string",
-      "required": true
+    } ,
+    "status_txt" : {
+      "type" : "string" ,
+      "required" : false
     }
   }
 }

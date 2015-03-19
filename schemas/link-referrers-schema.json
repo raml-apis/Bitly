@@ -1,47 +1,62 @@
 {
-  "$schema": "http://json-schema.org/draft-03/schema",
-  "required": true,
-  "properties": {
-    "data": {
-      "type": "object",
-      "properties": {
-        "tz_offset": {
-          "description": "The offset for the specified timezone, in hours.",
-          "type": "integer"
-        },
-        "unit": {
-          "description": "An echo of the specified unit value.",
-          "type": "string"
-        },
-        "units": {
-          "description": "An echo of the specified units value.",
-          "type": "integer"
-        },
-        "referrers": {
-          "items": {
-            "properties": {
-              "clicks": {
-                "description": "The number of clicks referred from this URL.",
-                "type": "integer"
-              },
-              "referrer": {
-                "description": "The URL referring clicks.",
-                "type": "string"
-              }
-            },
-            "type": "object"
-          },
-          "type": "array"
+  "required" : true ,
+  "$schema" : "http://json-schema.org/draft-03/schema" ,
+  "type" : "object" ,
+  "properties" : {
+    "status_code" : {
+      "type" : "number" ,
+      "required" : false
+    } ,
+    "data" : {
+      "type" : "object" ,
+      "required" : false ,
+      "properties" : {
+        "units" : {
+          "type" : "number" ,
+          "required" : false
+        } ,
+        "unit_reference_ts" : {
+          "type" : "object" ,
+          "required" : false
+        } ,
+        "tz_offset" : {
+          "type" : "number" ,
+          "required" : false
+        } ,
+        "unit" : {
+          "type" : "string" ,
+          "required" : false
+        } ,
+        "referrers" : {
+          "type" : "object" ,
+          "required" : false ,
+          "properties" : {
+            "direct" : {
+              "type" : "array" ,
+              "required" : false ,
+              "items" : [
+                {
+                  "type" : "object" ,
+                  "properties" : {
+                    "referrer" : {
+                      "type" : "string" ,
+                      "required" : false
+                    } ,
+                    "clicks" : {
+                      "type" : "number" ,
+                      "required" : false
+                    }
+                  }
+                }
+              ]
+            }
+          }
         }
       }
-    },
-    "status_code": {
-      "type": "integer",
-      "required": true
-    },
-    "status_txt": {
-      "type": "string",
-      "required": true
+    } ,
+    "status_txt" : {
+      "type" : "string" ,
+      "required" : false
     }
   }
 }
