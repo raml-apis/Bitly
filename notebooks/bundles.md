@@ -82,7 +82,7 @@ REAL_COLLABORATOR_EMAIL = prompt("Please, enter Bitly registration email of the 
 
 // Read about the Bitly API at https://anypoint.mulesoft.com/apiplatform/popular/admin/#/dashboard/apis/7589/versions/7715/contracts
 
-API.createClient('client', '/apiplatform/repository/public/organizations/30/apis/7589/versions/7715/definition');
+API.createClient('client', '#REF_TAG_DEFENITION');
 
 ```
 
